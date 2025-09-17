@@ -1,0 +1,29 @@
+# Binários compilados
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Pastas comuns de build
+bin/
+build/
+dist/
+
+# Dependências (se você usar vendoring)
+vendor/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.swp
+
+# Configurações do editor/IDE
+.vscode/
+.idea/
+*.iml
+
+# Test cache (caso queira evitar)
+*.coverprofile

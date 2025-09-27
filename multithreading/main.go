@@ -61,7 +61,7 @@ func callViaCep(cep string, client *http.Client, c chan<- ViaCep) (*ViaCep, erro
 	return &viaCep, nil
 }
 
-func callBrasilCep(cep string, client *http.Client, c chan BrasilCep) (*BrasilCep, error) {
+func callBrasilCep(cep string, client *http.Client, c chan<- BrasilCep) (*BrasilCep, error) {
 	brasilCepUrl := "https://brasilapi.com.br/api/cep/v1/" + cep
 	requestBrasilCep, _ := http.NewRequest("GET", brasilCepUrl, nil)
 

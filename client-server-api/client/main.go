@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	httpClient "github.com/deal-machine/go-expert/challenge01/http"
-	"github.com/deal-machine/go-expert/challenge01/logger"
+	httpClient "github.com/deal-machine/go-expert/client-server-api/http"
+	"github.com/deal-machine/go-expert/client-server-api/logger"
 )
 
 const PREFIX = "[CLIENT] "

@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/deal-machine/go-expert/challenge01/db"
-	httpClient "github.com/deal-machine/go-expert/challenge01/http"
-	"github.com/deal-machine/go-expert/challenge01/logger"
+	"github.com/deal-machine/go-expert/client-server-api/db"
+	httpClient "github.com/deal-machine/go-expert/client-server-api/http"
+	"github.com/deal-machine/go-expert/client-server-api/logger"
 
 	"github.com/google/uuid"
 )

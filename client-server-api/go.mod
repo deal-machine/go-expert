@@ -1,4 +1,4 @@
-module github.com/deal-machine/go-expert/challenge01
+module github.com/deal-machine/go-expert/client-server-api
 
 go 1.24.6
 

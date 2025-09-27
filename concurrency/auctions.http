@@ -1,0 +1,14 @@
+###
+POST http://localhost:8080/auctions
+Content-Type: application/json
+
+{
+  "product_name": "foo",
+  "category": "bar",
+  "description": "foo-bar-desc",
+  "condition": 0
+}
+
+@auctionId = 30c0ab67-c4c2-4577-9e6d-77343ea5b86a
+###
+GET http://localhost:8080/auctions/{{auctionId}}

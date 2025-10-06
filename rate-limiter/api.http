@@ -1,0 +1,12 @@
+@token = testing_token123
+
+### api
+GET http://localhost:8080/api HTTP/2.0
+X-API-Key: {{token}}
+
+### apiKey
+GET http://localhost:8080/apiKey HTTP/2.0
+X-API-Key: {{token}}
+
+### ip
+GET http://localhost:8080/ip HTTP/2.0

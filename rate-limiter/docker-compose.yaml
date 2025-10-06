@@ -1,0 +1,12 @@
+services:
+  redis:
+    image: redis
+    container_name: redis-server
+    restart: always
+    command: >
+      redis-server
+      --loglevel debug
+    ports:
+      - 6379:6379
+    # volumes:
+    #   - ./data/redis:/data

@@ -1,4 +1,5 @@
 services:
+ 
   redis:
     image: redis
     container_name: redis-server
@@ -8,5 +9,29 @@ services:
       --loglevel debug
     ports:
       - 6379:6379
+    networks:
+      - app_network
     # volumes:
     #   - ./data/redis:/data
+
+  app:
+    build: .
+    container_name: rate-limiter
+    depends_on:
+      - redis
+    ports:
+      - 8080:8080
+    networks:
+      - app_network
+    environment:
+      - SERVER_PORT=8080
+      - API_KEY_LIMIT=10
+      - API_KEY_EXPIRATION=60s
+      - IP_LIMIT=15
+      - IP_EXPIRATION=60s
+      - DB_PORT=6379
+      - DB_HOST=redis
+      
+
+networks:
+  app_network:

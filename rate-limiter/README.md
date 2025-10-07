@@ -44,7 +44,7 @@ O objetivo deste desafio é criar um rate limiter em Go que possa ser utilizado 
   - baixar o repositório:
     - github.com/deal-machine/go-expert/rate-limiter
   - instalar os pacotes `go mod tidy`
-  - rodar o comando para executar o container docker com a imagem do redis `docker compose up --build -d`
+  - rodar o comando para executar os containers docker com as imagens do redis e app `docker compose up --build -d`
   - definir as variáveis de ambiente `cmd/server/.env`, caso não defina, elas tem valores *default*
       ``` SERVER_PORT
           API_KEY_LIMIT
